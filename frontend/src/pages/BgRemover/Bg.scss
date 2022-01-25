@@ -1,0 +1,139 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.BgRnavbar{
+    height: 60px;
+    width: 100%;
+    background-color: #F7F8FA;
+}
+
+.BgRnavbar img{
+    margin: 12px 50px;
+}
+
+.BgRemoverLeftSection{
+    background-color: #C3E7FD;
+    border: 4px solid #14278363;
+    border-radius:10px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+.BgRemoverRightSection{
+    border: 3px solid #777676;
+    border-radius: 10px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 85px;
+}
+
+.BgRemoverSection{
+    display: inline;
+}
+
+.BgLeft{
+    margin: 80px 150px;
+    margin-left: 100px;
+    margin-right: 180px;
+}
+
+.gallery{
+    background-color: #F4F4F4;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+.square{
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+
+.circle{
+    position: absolute;
+    top: 27px;
+    left: 25px;
+}
+
+.triangle{
+    position: absolute;
+    top: 34.5px;
+    left: 21.5px;
+}
+
+.BgLeft h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.BgLeft p{
+    font-size:20px;
+    margin: 55px 0;
+}
+
+.upload{
+    margin: 70px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.addFileButton:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.BgRemoverButton{
+    display: block;
+    position: relative;
+    padding-right: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #142683;
+    padding: 10px 50px;
+    text-align: left;
+}
+
+.dropButton{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #142683;
+    background-color: transparent;
+    color: #142683;
+    box-shadow: 0.5px 0.5px 3px 0.5px #142683;
+}
+
+.arrowLine{
+    position: absolute;
+    top: 18px;
+    left: 160px;
+}
+
+.arrow{
+    position: absolute;
+    top: 13px;
+    left: 166px;
+}

@@ -1,0 +1,62 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.dashboardContainer{
+    display:flex;
+    margin-top:35px;
+    width: 90%;
+    background-color: #c3e7fd;
+    margin-left: 5%;
+    border-radius:20px;
+}
+
+.imageContainer{
+    float:left;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.imageContainer img{
+    height: 100%;
+}
+
+.purpleRect{
+    position: relative;
+}
+.purpleRect .purpleBG{
+    height: 100%;
+}
+
+.headingContainer{
+    width:70%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.mainHeading{
+    float:left;
+    margin-left: 70px;
+}
+
+.mainHeading h1{
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.mainHeading p{
+    font-size: 23px;
+}
+
+.dashButtonContainer{
+    position: absolute;
+    right: 132px;
+    top: 24px;
+}
+
+.btn{
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}

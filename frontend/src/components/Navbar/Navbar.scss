@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+.navbarContainer{
+    //align-items:center;
+    margin: 0;
+    padding :1px 3px;
+    //position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: #F7F8FA;
+    height: 60px;
+}
+
+.logoContainer{
+    margin:12px 10px 0px 50px;
+    float:left;
+}
+
+.buttonContainer{   
+    margin-top: 10px;
+    margin-right: 50px;
+    //background: #142683;    
+    border: none;
+   // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    cursor: pointer;   
+    float: right;
+}
+
+button{
+    background-color: #142683;   
+    color: #ffffff; 
+    border: none;
+    padding: 10px 10px;
+    border-radius:5px;   
+    margin-top: 2px;
+    cursor: pointer;
+    //float: right
+}
