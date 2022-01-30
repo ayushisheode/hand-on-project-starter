@@ -3,7 +3,7 @@ import logo from '../../components/Navbar/logo.svg';
 import profile from './layer1.svg';
 import add from './strokeAdd.svg';
 import circle from './strokeCircle.svg';
-import './Logout.scss';
+import './Login.scss';
 import axios from 'axios';
 import {useState} from 'react';
 
@@ -18,12 +18,12 @@ const Logout = () => {
                 email,
                 password
             }
-            const response = await axios.post("http://localhost:5000/auth/login",data);
+            const response = await axios.post("http://localhost:5000/login",data);
             console.log(response);
         }catch(e){
             console.log(e);
         }
-    }
+    }    
 
 
   return (
@@ -45,14 +45,14 @@ const Logout = () => {
                 </div>
               </div>
               <div className="rightSection">
-                  <div className="logoutForm">
+              <div className="logoutForm">
                     <form>
                         <h2>Login to your account</h2>
                         <label>
-                            Email: <input type="email" name="email"  placeholder="Enter Email Address" value={email}  onChange={(e) => setEmail(e.target.value) } />
+                            Email: <input type="email" name="email" placeholder="Enter your Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                         </label>
                         <label>
-                            Password: <input type="password" name="password"  placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value) } />
+                            Password: <input type="password" name="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                         </label>
                         <button type="submit" onClick={signinHandler}>Login/Signup</button>
                     </form>
