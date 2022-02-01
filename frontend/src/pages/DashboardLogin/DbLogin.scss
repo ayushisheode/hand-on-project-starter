@@ -1,0 +1,109 @@
+*{
+    font-family:sans-serif;
+}
+.buttonContainer button{
+    margin-left:30px;
+}
+
+.DbLoginContainer .overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.7);
+    border:2px solid black;
+    z-index: 1;
+    display: none;
+}
+
+.DbLoginContainer .popupContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background:#fff;
+    width: 450px;
+    height: 400px;
+    z-index: 2;
+}
+
+.DbLoginContainer .close-btn{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    background:black;
+    color:white;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.DbLoginContainer.active .overlay{
+    display:block;
+}
+
+.DbLoginContainer.active .popupContainer{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+.popupContainer form{
+    position:absolute;
+    top:80px;
+    left:70px;
+}
+
+.popupContainer input{
+    display:block;
+    margin-top:20px;
+    border-radius: 5px;
+    width:300px;
+    outline:none;
+    padding: 5px 0px 5px 5px;
+    border:2px solid #9EAAB7;
+    color:#0d1116;
+}
+
+.popupContainer textarea{
+    display:block;
+    width:300px;
+    margin-top:20px;
+    resize:none;
+    height: 60px;
+    padding: 5px 0px 5px 5px;
+    border-radius: 5px;
+    border:2px solid #9EAAB7;
+    color:#0d1116;
+}
+
+.popupContainer button{
+    width:100%;
+    margin-top:20px;
+}
+
+.MyApi .MyAccount{
+    background-color: transparent;
+    color: black;
+}
+
+// .DbLoginBtn{
+//     background-color: transparent;
+//     color: black;
+//     margin-top: 10px;
+//     margin-right: 50px;
+//     //background: #142683;    
+//     border: none;
+//    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     text-align: center;
+//     cursor: pointer;   
+//     float: right;
+    
+// }

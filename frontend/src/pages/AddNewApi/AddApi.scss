@@ -1,0 +1,21 @@
+.popup{
+    background-color: blue;
+    height:50px; 
+}
+
+// .backdrop{
+//     position:fixed;
+//     // z-index: -1;
+//     top: 0;
+//     left: 0;   
+     
+//     opacity: 0.7;
+// }
+
+.backdrop::before{
+    content: '';
+    background-color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

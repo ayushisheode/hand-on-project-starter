@@ -36,6 +36,7 @@ router.post('/login', async (req, res) => {
 	const user = await User.findOne({ email }).lean()
 
 	if (!user) {
+    console.log('invalid');
 		return res.json({ status: 'error', error: 'Invalid email/password' })
 	}
 
