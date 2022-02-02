@@ -36,7 +36,7 @@ router.post('/login', async (req, res) => {
 	const user = await User.findOne({ email }).lean()
 
 	if (!user) {
-    console.log('invalid');
+    console.log('invalid email/password');
 		return res.json({ status: 'error', error: 'Invalid email/password' })
 	}
 
@@ -50,10 +50,11 @@ router.post('/login', async (req, res) => {
 			},
 			JWT_SECRET
 		)
-
+    console.log('success');
 		return res.json({ status: 'ok', data: token })
 	}
-
+ 
+  console.log('invalid email/password');
 	res.json({ status: 'error', error: 'Invalid email/password' })
 });
 

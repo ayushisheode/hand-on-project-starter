@@ -8,7 +8,7 @@ import axios from 'axios';
 import {useState} from 'react';
 
 
-const Logout = () => {
+const Login = () => {
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
 
@@ -63,4 +63,4 @@ const Logout = () => {
   );
 };
 
-export default Logout;
+export default Login;
