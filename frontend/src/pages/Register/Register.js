@@ -30,10 +30,10 @@ const Register = () => {
                     <form>
                         <h2>Create account</h2>
                         <label>
-                            Email: <input type="email" name="email" placeholder="Enter your Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                            Email: <input type="email" name="email" placeholder="Enter your Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                         </label>
                         <label>
-                            Password: <input type="password" name="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                            Password: <input type="password" name="password" placeholder="Enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
                         </label>
                         
                         <button type="submit" onClick={signinHandler}>Signup</button>
