@@ -17,7 +17,7 @@ function App() {
         <Route path="/Marketplace-LoggedOut" 
         element={<><Navbar /> <Dashboard /> <Api /></>} />   
            
-        <Route path="/Bg-Remover" element={<Bg />} />
+        <Route path="/upload" element={<Bg />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/Dashboard-Login" element={<DbLogin />} />

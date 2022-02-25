@@ -61,34 +61,3 @@ router.post('/login', async (req, res) => {
 module.exports = router;
 
 
-// const bcrypt = require("bcyrptjs");
-// const User = require("../models/user.js");
-
-// exports.register = async (req, res) => {
-  
-//   const { email, password } = req.body;
-
-//   if (!email || !password) {
-//     return res.json({ error: "Fill details" });
-//   }
-//   const hashPassword = await bcrypt.hash(password, 10);
-
-//   try {
-//     const newUser = await User.create({
-//       email,
-//       password: hashPassword,
-//     });
-
-//     res.status(200).json({
-//       status: "success",
-//       data: {
-//         newUser,
-//       },
-//     });
-//   } catch (err) {
-//     console.log(err);
-//     if (!email || !password) {
-//       return res.json({ error: "User registered already" });
-//     }
-//   }
-// };

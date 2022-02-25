@@ -8,8 +8,8 @@ import img3 from '../DashboardPage/image.svg';
 import img4 from '../DashboardPage/image.svg';
 import Dashboard from '../DashboardPage/Dashboard.js';
 import './marketLogin.scss';
-import DashboardLogin from '../DashboardLogin/DbLogin.js';
-import {Route ,BrowserRouter} from 'react-router-dom';
+//import DashboardLogin from '../DashboardLogin/DbLogin.js';
+import {Link} from 'react-router-dom';
 
 const marketLogin = () => {
     const togglePopup=() => {
@@ -17,9 +17,9 @@ const marketLogin = () => {
     }
 
     const account=()=>{
-            <BrowserRouter>
-                <Route path="/Dashboard-Login" component={DashboardLogin}/>
-            </BrowserRouter>
+           
+                {/* <Route path="/Dashboard-Login" component={DashboardLogin}/> */}
+                {/* <Link to="/Dashboard-Login" component={DashboardLogin} /> */}                          
     }
 
   return (
@@ -36,6 +36,7 @@ const marketLogin = () => {
 
                     <div className="buttonContainer DbLoginBtn">
                         <button className="MyAccount" onClick={account}>My Account</button>
+                        <Link to="/Dashboard-Login">My Account</Link>
                     </div>  
 
                     <div className="buttonContainer DbLoginBtn">

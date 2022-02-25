@@ -7,9 +7,29 @@ import circle from './circle.svg';
 import triangle from './triangle.svg';
 import arrowLine from './arrowLine.svg';
 import arrow from './arrow.svg';
-
+import axios from 'axios';
+import {useState} from 'react';
 
 const Bg = () => {
+
+  const [file,setFile] = useState('');
+  
+  const fileSelectedHandler = (event) => {
+      setFile(event.target.files[0]);
+      console.log(event.target.files[0]);
+  }
+
+  const uploadImage = () =>{
+    // event.preventDefault();
+    const data = new FormData();
+    //console.log(setFile);
+    data.append('image',file);
+    //console.log(data);
+    axios.post("http://localhost:5000/upload", data)
+    .then(res => { 
+        console.log(res);        
+      })
+  }
   
   return (
     <div className='BgRemoverContainer'>
@@ -27,6 +47,7 @@ const Bg = () => {
           </div> 
           
           <div className="BgRemoverRightSection">
+
               <div className="upload">
                 <div className="gallery">
                   <img className="square" src={square} alt="gallery" />
@@ -34,8 +55,12 @@ const Bg = () => {
                   <img className="triangle" src={triangle} alt="gallery" />
                 </div>
                 <p>File should be png or jpg and <br /> less than 5MB</p>
+
+                <label>
+                  <input type="file" name="file" value={file.image} onChange={(fileSelectedHandler)}/>
+                </label>
                 
-                <button className="BgRemoverButton addFileButton" type="submit" name="upload">Upload Image
+                <button className="BgRemoverButton addFileButton" type="submit" name="upload" onClick={uploadImage}>Upload Image
                   <img className="arrowLine" src={arrowLine} alt="arrow" />
                   <img className="arrow" src={arrow} alt="arrow" />
                 </button>
